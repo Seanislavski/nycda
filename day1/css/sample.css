@@ -1,0 +1,101 @@
+/*p {             //tag selector
+  color: blue;
+}
+
+.special {      //class selector
+}
+
+#bio {           //ID selector
+}
+
+div#wrapper > p { //div not necessary
+  font-size: 1.2em;
+}*/
+
+/*ul li ul {
+	display: none;
+}*/
+* {
+	box-sizing: border-box;
+}
+
+nav ul ul { /*nav ul ul better than ul li ul as it only targets nav*/
+	display: none;
+	background-color: rgba(250, 250, 250, 0.8);
+	color: white;
+	position: absolute;	
+	/*left: 0;*/
+	/*top: 38px;*/
+	/*bottom: 0;*/
+}
+
+nav ul li:hover ul{
+	display: block;
+	
+}
+
+nav > ul > li{
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+	position: relative;
+
+}
+
+nav ul li > a {
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	/*padding: 10px;*/
+}
+
+nav li{
+	list-style: none;
+	margin: 0 auto;
+	/*padding: 10px;*/
+	width: 60px;
+}
+
+nav > ul > li {
+	padding: 10px;
+	/*display: inline-block;
+	position: relative;*/
+} 
+nav > ul > li > ul > li{
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+ nav ul{
+ 	padding: 0;
+
+}
+ 
+.box {
+	width: 300px;
+	height: 300px;
+	color: white;
+	margin:0 auto;
+	background-color: rgb(220, 20, 230);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+nav {
+	width: 515px;
+	margin: 0 auto;
+	background-color: rgba(200, 200, 200,0.9);
+	/*position: relative;*/
+	border-radius: 5px;
+
+}
+
+li:hover{
+	background-color: rgba(250, 250, 250, 0.8);
+	/*color: rgba(0,0,0,1);*/
+}
+
+a:visited{
+	color: black;
+}
