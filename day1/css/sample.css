@@ -19,83 +19,155 @@ div#wrapper > p { //div not necessary
 	box-sizing: border-box;
 }
 
-nav ul ul { /*nav ul ul better than ul li ul as it only targets nav*/
-	display: none;
-	background-color: rgba(250, 250, 250, 0.8);
-	color: white;
-	position: absolute;	
-	/*left: 0;*/
-	/*top: 38px;*/
-	/*bottom: 0;*/
-}
-
-nav ul li:hover ul{
-	display: block;
-	
-}
-
-nav > ul > li{
-	display: inline-block;
-	margin: 0 10px;
-	vertical-align: top;
-	position: relative;
+nav {
+	/*width: 500px;*/
+	margin: 30px auto;
 
 }
+nav ul{
+	/*bg stuff*/
+	background: #efefef;
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background:
 
-nav ul li > a {
-	padding: 0px;
-	text-decoration: none;
+	-moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background:
+
+	-webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	/* end bg stuff*/
+
+	padding: 0 20px;
 	list-style: none;
-	/*padding: 10px;*/
+	position: relative;
+	display: inline-table;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	border-radius: 5px;
+}
+	nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	nav ul li{
+		float: left;
+	}
+		nav ul li:hover {
+			background: #4b545f;
+			background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+		}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	nav ul li a {
+		display: block;
+		padding: 25px 40px;
+		text-decoration: none;
+	}
+
+	nav ul ul {
+		padding: 0;
+		position: absolute;
+		top: 100%;
+		border-radius: 0px;
+		display: none;
+	}
+			nav ul li:hover > ul {
+			display: block;
+			}
+
+		nav ul ul li {
+			float:none;
+			position: relative;
+		}
+			nav ul ul li a{
+				padding: 15px 40px;
+			}
+				nav ul ul li a:hover {
+						background: #4b545f;
+					}
+
+/*
+nav ul {
+	margin: 0 10px;
+	background-color: rgba(200, 200, 200,0.9);
+	padding: 0 10px;
 }
 
 nav li{
 	list-style: none;
-	margin: 0 auto;
-	/*padding: 10px;*/
-	width: 60px;
+
 }
 
-nav > ul > li {
+nav ul ul {
+	display: none;
+	background-color: rgba(250, 250, 250, 0.8);
+	position: absolute;
+	top: 38px;
+	border-radius: 0px;
+	padding: 0;
+}
+
+nav > ul > li{
+	display: inline-table;
+	margin: 0 10px;
 	padding: 10px;
-	/*display: inline-block;
-	position: relative;*/
-} 
-nav > ul > li > ul > li{
-	padding: 10px;
+	float: left;
+}
+
+nav ul li {
+	width: 50px;
+}
+
+nav ul li:hover > ul {
+		display: inline-table;
+	}
+nav ul li:hover ul{
+	display: inline-table; makes sub-menu's appear
+}
+
+
+
+nav ul li > a {
+	text-decoration: none;
+	list-style: none;
+}
+
+nav:focus {
 	display: inline-block;
-	position: relative;
+	background-color: #9A9A9A;
 }
 
- nav ul{
- 	padding: 0;
+nav > ul > li > ul > li{
 
 }
- 
-.box {
-	width: 300px;
-	height: 300px;
-	color: white;
-	margin:0 auto;
-	background-color: rgb(220, 20, 230);
-	padding: 10px;
-	border-radius: 5px;
-}
 
-nav {
-	width: 515px;
-	margin: 0 auto;
-	background-color: rgba(200, 200, 200,0.9);
-	/*position: relative;*/
-	border-radius: 5px;
 
+
+a {
+	color: #606060;
 }
 
 li:hover{
 	background-color: rgba(250, 250, 250, 0.8);
-	/*color: rgba(0,0,0,1);*/
+}
+*/
+.flex-container{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: flex-start;
 }
 
-a:visited{
-	color: black;
+.box {
+	width: 270px;
+	height: 270px;
+	color: white;
+	margin: 0 auto;
+	background-color: rgb(59, 110, 195);
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.9);
+	align: center;
 }
