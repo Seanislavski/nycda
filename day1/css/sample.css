@@ -18,11 +18,28 @@ div#wrapper > p { //div not necessary
 * {
 	box-sizing: border-box;
 }
+body{
+		/*bg stuff*/
+	background: #F0F0F0;
+	/*background: linear-gradient(top, #F0F0F0 0%, #D6D6D6 100%);
+	background:
+
+	-moz-linear-gradient(top, #F0F0F0 0%, #D6D6D6 100%);
+	background:
+
+	-webkit-linear-gradient(top, #F0F0F0 0%,#D6D6D6 100%);*/
+	/* end bg stuff*/
+
+
+}
 
 nav {
 	/*width: 500px;*/
-	margin: 30px auto;
+	margin: 30px auto;[]
 
+}
+nav a:hover{
+	color:white;
 }
 nav ul{
 	/*bg stuff*/
@@ -62,8 +79,9 @@ nav ul{
 		}
 	nav ul li a {
 		display: block;
-		padding: 25px 40px;
+		padding: 20px 20px;
 		text-decoration: none;
+		color: #787878;
 	}
 
 	nav ul ul {
@@ -72,21 +90,27 @@ nav ul{
 		top: 100%;
 		border-radius: 0px;
 		display: none;
+		background: #4b545f;
 	}
 			nav ul li:hover > ul {
 			display: block;
+			
 			}
 
 		nav ul ul li {
 			float:none;
 			position: relative;
+			border-bottom-color:#787878;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+
 		}
 			nav ul ul li a{
-				padding: 15px 40px;
+				padding: 15px 20px;
 			}
-				nav ul ul li a:hover {
-						background: #4b545f;
-					}
+a {
+	color: #606060;
+}
 
 /*
 nav ul {
@@ -141,12 +165,6 @@ nav:focus {
 
 nav > ul > li > ul > li{
 
-}
-
-
-
-a {
-	color: #606060;
 }
 
 li:hover{
