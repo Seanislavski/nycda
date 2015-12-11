@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  flex-flux: row nowrap;
+  justify-content: center;
+  align-content: center;
+  padding-left: 15px;
+  padding-right: 15px; }
+  header h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    header nav ul {
+      display: flex;
+      align-items: space-between; }
+      header nav ul li {
+        display: inline-flex; }
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/*# sourceMappingURL=main.css.map */
