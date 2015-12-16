@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA8FA,GAAG;EACF,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,IAAI",
+"sources": ["../scss/main.scss"],
+"names": [],
+"file": "main.css"
+}

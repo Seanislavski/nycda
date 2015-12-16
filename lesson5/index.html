@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Learning!</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+	<h1>
+		This page has JavaScript <em>on</em> it!
+	</h1>
+	</header>
+	<div class="row">
+	<div id="content1">
+	<h3>Enter °C that you would like converted to °F</h3>
+	<input id="temperature" type="text">
+	<input type="submit" onclick='celsToFahr(document.getElementById("temperature").value)'>
+	<h3>
+	That is <a id="here"></a>°F
+	</h3>
+	</div>
+
+	<div id="content2">
+	<h3>Enter °F that you would like converted to °C</h3>
+	<input id="fToC" type="text">
+	<input type="submit" onclick='fahrToCels(document.getElementById("fToC").value)'>
+	<h3>
+	That is <a id="there"></a>°C
+	</h3>
+	</div>
+	</div>
+	<div class="row">
+		Whatever
+	</div>
+	
+	<footer>
+	&copy; Sean Rivis 2015
+	</footer>
+</body>
+<script src="js/main.js"></script>
+</html>
+

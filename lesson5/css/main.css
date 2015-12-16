@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: center; }
+
+body {
+  display: flex;
+  min-height: 96vh;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex: 1; }
+
+#content1 {
+  order: 1; }
+
+#content2 {
+  order: 2; }
+
+footer {
+  align-self: flex-end; }
+
+/*# sourceMappingURL=main.css.map */

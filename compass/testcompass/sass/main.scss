@@ -1,0 +1,24 @@
+@import "partials/screen.scss";
+@import "partials/font";
+
+
+header{
+	display: flex;
+	flex-flow: column nowrap;
+	font-family: Cinzel;
+	h1{
+		a{
+			text-decoration: none;
+		}
+	}
+}
+nav{
+	list-style: none;
+	ul{
+		list-style: none;
+		li{
+			list-style: none;   
+		}
+	}
+}
+
