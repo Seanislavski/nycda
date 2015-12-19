@@ -47,14 +47,14 @@
 // document.write('<br>' + fahrTemp + '°F is ' + (((fahrTemp - 32) * 5) / 9) + '°C');
 
 function celsToFahr(cels) {
-	var result = ((cels * 9) / 5) + 32;
+	var result = (((cels * 9) / 5) + 32).toFixed(2);
 	// console.log(result);
 	document.getElementById("here").innerHTML = result;
 	return result;
 }
 
 function fahrToCels(fahr) {
-	var result = (((fahr - 32) * 5) / 9);
+	var result = (((fahr - 32) * 5) / 9).toFixed(2);
 	// console.log(result);
 	document.getElementById("there").innerHTML = result;
 	return result;
@@ -73,3 +73,37 @@ function fahrToCels(fahr) {
 
 // document.write('<p>' + threeChange + '°F is ' + answo + '°C');
 
+
+function squareNumber(numb) {
+	var result = numb * numb;
+	document.getElementById("poop").innerHTML = result;
+	return result;
+}
+
+function halfNumber(number) {
+	var result = (number / 2);
+	document.getElementById("doop").innerHTML = result;	
+	console.log(result);
+	return result;
+}
+
+function percentOf(num1, num2) {
+	var result = (num1 / num2 * 100).toFixed(2);
+	document.getElementById("foop").innerHTML = result;	
+	return result;
+}
+
+function areaOfCircle(radius) {
+	var result = (Math.PI * radius * radius).toFixed(2);
+	document.getElementById("roop").innerHTML = result;
+	return result;
+}
+
+function doItAll(whatever) {
+	var h = halfNumber(whatever);
+	var i = squareNumber(h);
+	var j = areaOfCircle(i);
+	var k = percentOf(i, j);
+	var l = celsToFahr(whatever);
+	var m = fahrToCels(whatever);
+}
